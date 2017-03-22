@@ -1,5 +1,7 @@
 import json
+
 from xlrd import open_workbook as OW
+
 
 class JsonConfig():
     def dump_config(self):

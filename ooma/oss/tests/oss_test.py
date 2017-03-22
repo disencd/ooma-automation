@@ -1,10 +1,12 @@
 import unittest
-from oss.pages.ossloginpage import Oss_login
-from oss.pages.WebAccountActivation import Account_Activation
+
+from selenium import webdriver
+
 from oss.pages.CustmBuyerOSSSearch import CustmBuyerOSSSearch
 from oss.pages.DevSearchResult import DeviceSearchResult
+from oss.pages.WebAccountActivation import Account_Activation
 from oss.pages.customers.CustDetails1 import CustomerDetailsPage
-from selenium import webdriver
+from oss.pages.ossloginpage import Oss_login
 from oss.setup.config_oss import JsonConfig
 
 
