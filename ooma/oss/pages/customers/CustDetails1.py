@@ -105,13 +105,13 @@ class CustomerDetailsPage():
                 doc_elements = driver.find_element_by_xpath("//th[@class='popUpHeader']")
                 print "Dropdown elements " , doc_elements.text
                 select_options_list = driver.find_elements(By.XPATH, "//select[@id='reasonPk']//option")
-                selectobj = Select(driver.find_element_by_id("reasonPk"))
-                print "After selecting object" , selectobj
-                selectobj.select_by_index(3)
+                #selectobj = Select(driver.find_element_by_id("reasonPk"))
+                #print "After selecting object" , selectobj
+                #selectobj.select_by_index(3)
                 for option_name in select_options_list:
                     print option_name.text
                     if option_name.text == "Returned Device":
-                        selectobj.select_by_value(option_name.text)
+                        #selectobj.select_by_value(option_name.text)
 
                         #Select.select_by_index(5)
                         break
